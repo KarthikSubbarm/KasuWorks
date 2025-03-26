@@ -1,0 +1,213 @@
+site_name: KasuWorks
+site_url: https://karthiksubbarm.github.io/KasuWorks/
+site_author: Karthik Subbaram
+site_dir: 'site'
+site_description: >-
+  My dump on several topics that I'm interested in including Management, Data, AI and other topics.
+docs_dir: 'docs'
+copyright: >
+  Copyright &copy; 2025 Karthik Subbaram 
+repo_url: https://github.com/KarthikSubbarm/KasuWorks
+repo_name: KarthikSubbarm/KasuWorks
+
+theme:
+  name: material
+  favicon: assets/images/KasuWorks.png
+  logo: assets/images/KasuWorks.png
+  icon:
+    annotation: material/plus-circle
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  font:
+    text: Fira Sans
+    code: Fira Code
+
+  features:
+    
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking  
+    - navigation.tabs
+    - navigation.tabs.sticky  
+    - navigation.sections  
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes    
+    - navigation.top     
+    - navigation.footer
+    - toc.extend
+    - toc.follow          
+    - content.tooltips
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.action.view        
+    - search.suggest    
+    - search.highlight
+    - search.share    
+
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+    - scheme: slate
+      primary: black
+      accent: indigo
+  font:
+    default: Roboto
+    text: Roboto
+  icon:
+    annotation: material/plus-circle
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye  
+palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: teal
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: teal
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: teal
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+markdown_extensions:
+  - admonition  
+  - abbr
+  - attr_list 
+  - def_list 
+  - md_in_html
+  - tables
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+#  - pymdownx.blocks.caption
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all  
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - codehilite:
+      guess_lang: false  
+      linenums: false
+  - toc:
+      permalink: #
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - blog
+#  - tags
+
+extra:  
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/KarthikSubbarm
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/karthiksubbaram/
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/karthiksubbaram
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:karthik@kasuworks.com  
+
+nav:
+  - Introduction : 'index.md'  
+
+#  - Management:
+#    - Project Management: 'management/project-management.md'
+#    - Program Management: 'management/program-management.md'
+#    - Product Management: 'management/product-management.md'
+#    - Quality Management: 'management/quality-management.md' 
+#    - Management: 'management/index.md'
+#    - Leadership: 'management/leadership.md'
+#    - Strategy: 'management/strategy.md'
+#    - Execution: 'management/execution.md'    
+#    - Technology Management: 'management/technology-management.md'
+#    - Risk Management: 'management/risk-management.md'
+#    - Change Management: 'management/change-management.md'
+#    - Knowledge Management: 'management/knowledge-management.md'
+#    - Innovation Management: 'management/innovation-management.md'
+#    - Talent Management: 'management/talent-management.md'
+#    - Performance Management: 'management/performance-management.md'
+#    - Time Management: 'management/time-management.md'
+#    - Resource Management: 'management/resource-management.md'
+#    - Financial Management: 'management/financial-management.md'
+#    - Procurement Management: 'management/procurement-management.md'
+#    - Supply Chain Management: 'management/supply-chain-management.md'
+#    - Operations Management: 'management/operations-management.md'
+#    - Service Management: 'management/service-management.md'
+#    - Marketing Management: 'management/marketing-management.md'
+#    - Social Media Management: 'management/social-media-management.md'
+#    - Human Resources Management: 'management/human-resources-management.md'
+#    - Legal Management: 'management/legal-management.md'
+#    - Governance Management: 'management/governance-management.md'
+#    - Compliance Management: 'management/compliance-management.md'
+#    - Security Management: 'management/security-management.md'
+#    - Privacy Management: 'management/privacy-management.md'
+#    - Data Management: 'management/data-management.md'
+#    - Information Management: 'management/information-management.md'
+#    - Communication Management: 'management/communication-management.md' 
+
+  - Data:
+    - Data: 'data/index.md'
+#    - Data Management & Governance: 'data/DM-and-Governance.md'    
+#    - Data Engineering: 'data/data-engineering.md'
+#    - Data Science: 'data/data-science.md'
+#    - Data Analytics: 'data/data-analytics.md'
+#    - Data Visualization: 'data/data-visualization.md'
+#    - Data Warehousing: 'data/data-warehousing.md'
+#    - Data Lakes: 'data/data-lakes.md'    
+#    - Data Modeling: 'data/data-modeling.md'    
+  - AI:
+    - AI: 'ai/index.md'
+    - Generative AI: 'ai/generative-ai.md'
+    - Agentic AI: 'ai/agentic-ai.md'
+#    - Natural Language Processing: 'ai/NLP.md'
+#    - Machine Learning: 'ai/machine-learning.md'
+#    - Deep Learning: 'ai/deep-learning.md'
+#    - Reinforcement Learning: 'ai/reinforcement-learning.md'
+  - Blog:
+    - blog/index.md
+
+#  - About Me: 'index.md'
+
+
