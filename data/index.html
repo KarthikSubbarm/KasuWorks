@@ -684,11 +684,11 @@
 
 <h1 id="_1"></h1>
 <pre class="mermaid"><code>graph LR
-  A[Start] --&gt; B{Error?};
-  B --&gt;|Yes| C[Hmm...];
-  C --&gt; D[Debug];
+  A[data Producer] --&gt; B{Data Quality adequate?};
+  B --&gt;|No| C[with Data Quality Issues];
+  C --&gt; D[Fix the quality issues];
   D --&gt; B;
-  B ----&gt;|No| E[Yay!];</code></pre>
+  B ----&gt;|Yes| E[Ingest into Data Lake];</code></pre>
 
 
 
