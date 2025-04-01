@@ -3,7 +3,7 @@ site_url: https://karthiksubbarm.github.io/KasuWorks/
 site_author: Karthik Subbaram
 site_dir: 'site'
 site_description: >-
-  My dump on several topics that I'm interested in including Management, Data, AI and other topics.
+  All topics that I'm interested in including Management, Data, AI and other topics along with my high level career profile.
 docs_dir: 'docs'
 copyright: >
   Copyright &copy; 2025 Karthik Subbaram 
@@ -13,31 +13,42 @@ repo_name: KarthikSubbarm/KasuWorks
 theme:
   name: material
   favicon: assets/images/KasuWorks.png
-  logo: assets/images/KasuWorks.png
+  logo: assets/images/KasuWorks.png 
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
   icon:
     annotation: material/plus-circle
     repo: fontawesome/brands/github
     edit: material/pencil
-    view: material/eye
+    view: material/eye  
   font:
     text: Fira Sans
     code: Fira Code
-
-  features:
-    
+  features:  
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
     - navigation.instant.preview
-    - navigation.tracking  
-    - navigation.tabs
-    - navigation.tabs.sticky  
+    - navigation.tracking   
     - navigation.sections  
     - navigation.expand
     - navigation.path
     - navigation.indexes    
     - navigation.top     
     - navigation.footer
+    - navigation.instant.progress
     - toc.extend
     - toc.follow          
     - content.tooltips
@@ -51,45 +62,13 @@ theme:
     - search.highlight
     - search.share    
 
-  palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-    - scheme: slate
-      primary: black
-      accent: indigo
   font:
     default: Roboto
     text: Roboto
-  icon:
-    annotation: material/plus-circle
-    repo: fontawesome/brands/github
-    edit: material/pencil
-    view: material/eye  
-palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      primary: teal
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      primary: teal
-      scheme: default 
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      primary: teal
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
-
+ 
+  
+  
+  
 markdown_extensions:
   - admonition  
   - abbr
@@ -136,9 +115,9 @@ markdown_extensions:
 plugins:
   - search
   - blog
-#  - tags
 
-extra:  
+extra:
+  generator: false
   social:
     - icon: fontawesome/brands/github 
       link: https://github.com/KarthikSubbarm
@@ -150,7 +129,15 @@ extra:
       link: mailto:karthik@kasuworks.com  
 
 nav:
-  - Introduction : 'index.md'  
+  - About Me : 'index.md'  
+  - Data:
+    - Data: 'data/index.md'
+  - AI:
+    - AI: 'ai/index.md'
+    - Generative AI: 'ai/generative-ai.md'
+    - Agentic AI: 'ai/agentic-ai.md'
+  - Blog:
+    - blog/index.md
 
 #  - Management:
 #    - Project Management: 'management/project-management.md'
@@ -187,8 +174,8 @@ nav:
 #    - Information Management: 'management/information-management.md'
 #    - Communication Management: 'management/communication-management.md' 
 
-  - Data:
-    - Data: 'data/index.md'
+#  - Data:
+#    - Data: 'data/index.md'
 #    - Data Management & Governance: 'data/DM-and-Governance.md'    
 #    - Data Engineering: 'data/data-engineering.md'
 #    - Data Science: 'data/data-science.md'
@@ -197,16 +184,16 @@ nav:
 #    - Data Warehousing: 'data/data-warehousing.md'
 #    - Data Lakes: 'data/data-lakes.md'    
 #    - Data Modeling: 'data/data-modeling.md'    
-  - AI:
-    - AI: 'ai/index.md'
-    - Generative AI: 'ai/generative-ai.md'
-    - Agentic AI: 'ai/agentic-ai.md'
+#  - AI:
+#    - AI: 'ai/index.md'
+#    - Generative AI: 'ai/generative-ai.md'
+#    - Agentic AI: 'ai/agentic-ai.md'
 #    - Natural Language Processing: 'ai/NLP.md'
 #    - Machine Learning: 'ai/machine-learning.md'
 #    - Deep Learning: 'ai/deep-learning.md'
 #    - Reinforcement Learning: 'ai/reinforcement-learning.md'
-  - Blog:
-    - blog/index.md
+#  - Blog:
+#    - blog/index.md
 
 #  - About Me: 'index.md'
 

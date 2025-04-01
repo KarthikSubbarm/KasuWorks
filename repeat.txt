@@ -7,17 +7,8 @@ Execute the following docker command: (This sets up the Docs and mkdocs.yml file
 Execute the following docker command: ( Serves the website as Locahost at 8000)
 docker run --rm -it -p 8000:8000 -v "%cd%":/docs squidfunk/mkdocs-material
 
-Build and develop your site. (Use the local host to validate the changes)
-    Logos
-    Theme
-    Color
-    features
-    plugins
-    Navigation
-    Search
-    Social Media
-
-Make one change at a time so that you know which config is causing the error.
+Build and develop your site. Use the http://localhost:8000/KasuWorks/ to validate the changes by setting up the Logos, 
+Theme, Color, features, plugins, Navigation, Search, Social Media.
 
 Execute the following Docker Command to build the website:
   docker run --rm -it -v "%cd%":/docs squidfunk/mkdocs-material build --verbose
@@ -28,9 +19,3 @@ Create deploy.bat (windows) and execute the bast file.
 A new site will be generated and the html files will be pushed to gh-pages branch
 Configure github repository especially Pages setup 
 Latest pages will be deployed automatically and view the latest pages after successful deployment.
-
-
-
-
-
-
